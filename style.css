@@ -6,12 +6,6 @@
     --text-color: #FFFFFF;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 h1 {
     font-family: "Big Shoulders Display", sans-serif;
     font-size: 40px;
@@ -72,17 +66,33 @@ button {
 
 .grid {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-template-rows: 500px 500px 500px;
+
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        border-radius: 0; 
+        border-radius: 8px; 
+    }
+}
+
+/* .grid {
+    display: grid;
     grid-template-columns: 307px 307px 307px;
     grid-template-rows: 500px 500px 500px;
-}
+} */
 
 .sedans {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: var(--orange);
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    /* border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px; */
 }
 
 .suvs {
@@ -97,6 +107,6 @@ button {
     flex-direction: column;
     justify-content: center;
     background-color: var(--black);
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    /* border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px; */
 }
