@@ -3,7 +3,7 @@
 Este proyecto es una simple página web que presenta tres tipos de autos de alquiler: Sedans, SUVs y vehículos de lujo. La página está diseñada utilizando HTML y CSS, con un enfoque en la disposición en cuadrícula (grid layout) y el uso de fuentes de Google Fonts. 
 
 ### **Deployment**
-https://bytitoemiljo.github.io/grid/
+https://bytitoemiljo.github.io/car-rentals-grid-layout/
 
 ### **Tecnologías Utilizadas**
 * HTMLs
